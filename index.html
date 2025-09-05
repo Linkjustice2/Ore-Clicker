@@ -9,19 +9,29 @@
 <body>
   <h1>Ore Clicker</h1>
   <div id="game-container">
+
+    <!-- Left: Ore and Click Button -->
     <div id="click-area">
       <p id="ore-count">Pebbles: 0</p>
       <img id="mine-btn" src="assets/pebble.png" alt="Pebble">
     </div>
 
+    <!-- Right: Upgrades and Auto Miners -->
     <div id="upgrades-area">
-      <h2>Upgrades</h2>
-      <div id="upgrades">
-        <button id="wooden-pickaxe-btn">Buy Wooden Pickaxe (+1 per click) - Cost: 10 Pebbles</button>
+      <h2>Click Upgrades</h2>
+      <div id="click-upgrades">
+        <button id="wooden-pickaxe-btn">Wooden Pickaxe (+1/click) - Cost: 10</button>
+        <button id="stone-pickaxe-btn">Stone Pickaxe (+2/click) - Cost: 50</button>
+      </div>
+
+      <h2>Auto Miners</h2>
+      <div id="auto-upgrades">
+        <button id="apprentice-miner-btn">Apprentice Miner (+1/sec) - Cost: 20</button>
+        <button id="expert-miner-btn">Expert Miner (+5/sec) - Cost: 100</button>
       </div>
     </div>
-  </div>
 
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
