@@ -1,33 +1,28 @@
-/* Full page and layout */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #f7f3e9, #d9c9a3);
   color: #3b2f2f;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Title */
 h1 {
   font-size: 3rem;
   margin: 30px 0;
   text-shadow: 2px 2px #d2b48c;
 }
 
-/* Game container: two columns */
 #game-container {
   display: flex;
+  width: 90%;
   justify-content: center;
   align-items: flex-start;
-  width: 90%;
-  flex-grow: 1;
 }
 
-/* Left click area */
 #click-area {
   flex: 1;
   display: flex;
@@ -35,10 +30,9 @@ h1 {
   align-items: center;
 }
 
-/* Ore counter */
 #ore-count {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 15px 25px;
   background: #fff9e6;
   border-radius: 15px;
@@ -47,7 +41,6 @@ h1 {
   overflow: visible;
 }
 
-/* Mine pebble image */
 #mine-btn {
   width: 150px;
   height: 150px;
@@ -63,43 +56,45 @@ h1 {
   transform: scale(0.95) rotate(5deg);
 }
 
-/* Right upgrades area */
 #upgrades-area {
   flex: 1;
   margin-left: 50px;
 }
 
-#upgrades h2 {
-  font-size: 2rem;
+#upgrades-area h2 {
+  font-size: 1.8rem;
   text-shadow: 1px 1px #d2b48c;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-#upgrades button {
-  font-size: 1.2rem;
-  padding: 12px 25px;
-  margin: 10px 0;
+#click-upgrades button,
+#auto-upgrades button {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  margin: 8px 0;
   cursor: pointer;
   border: none;
-  border-radius: 15px;
+  border-radius: 12px;
   background: linear-gradient(to bottom, #7e5e3e, #a87f52);
   color: white;
   font-weight: bold;
-  box-shadow: 0 4px #5a3f28;
+  box-shadow: 0 3px #5a3f28;
   transition: transform 0.1s, background 0.2s, box-shadow 0.1s;
 }
 
-#upgrades button:hover {
+#click-upgrades button:hover,
+#auto-upgrades button:hover {
   background: linear-gradient(to bottom, #a87f52, #c49e7c);
   transform: scale(1.05);
 }
 
-#upgrades button:active {
+#click-upgrades button:active,
+#auto-upgrades button:active {
   transform: scale(0.95);
   box-shadow: 0 2px #5a3f28;
 }
 
-/* Floating +1 animation */
 .floating-text {
   position: absolute;
   font-weight: bold;
