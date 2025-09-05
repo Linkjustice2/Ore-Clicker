@@ -1,58 +1,83 @@
+/* General Page */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
-  margin-top: 50px;
-  background: #f4f4f4;
-  color: #333;
+  background: linear-gradient(to bottom, #f7f3e9, #d9c9a3); /* cookie clicker vibe */
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
 }
 
+/* Title */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-top: 40px;
   margin-bottom: 20px;
+  text-shadow: 2px 2px #d2b48c;
 }
 
+/* Ore Counter */
 #ore-count {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background: #fff9e6;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
 
+/* Mine Button */
 button#mine-btn {
-  font-size: 1.5rem;
-  padding: 20px 40px;
+  font-size: 2rem;
+  padding: 25px 50px;
   cursor: pointer;
   border: none;
-  border-radius: 10px;
-  background: #c0a16b;
-  color: white;
-  transition: transform 0.1s, background 0.2s;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #f2c26b, #e8a03f);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 5px #c37d2f;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
 }
 
 button#mine-btn:hover {
-  background: #d9b86c;
+  background: linear-gradient(to bottom, #f4c86d, #ebaa45);
   transform: scale(1.05);
 }
 
 button#mine-btn:active {
   transform: scale(0.95);
+  box-shadow: 0 2px #c37d2f;
+}
+
+/* Upgrades Section */
+h2 {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-shadow: 1px 1px #d2b48c;
 }
 
 #upgrades button {
-  font-size: 1rem;
-  padding: 10px 20px;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  margin: 10px 0;
   cursor: pointer;
   border: none;
-  border-radius: 8px;
-  background: #7e5e3e;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #7e5e3e, #a87f52);
   color: white;
-  transition: transform 0.1s, background 0.2s;
+  font-weight: bold;
+  box-shadow: 0 4px #5a3f28;
+  transition: transform 0.1s, background 0.2s, box-shadow 0.1s;
 }
 
 #upgrades button:hover {
-  background: #a87f52;
+  background: linear-gradient(to bottom, #a87f52, #c49e7c);
   transform: scale(1.05);
 }
 
 #upgrades button:active {
   transform: scale(0.95);
+  box-shadow: 0 2px #5a3f28;
 }
