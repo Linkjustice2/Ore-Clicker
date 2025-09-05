@@ -47,28 +47,20 @@ h1 {
   overflow: visible;
 }
 
-/* Mine button */
+/* Mine pebble image */
 #mine-btn {
-  font-size: 2rem;
-  padding: 25px 50px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(to bottom, #f2c26b, #e8a03f);
-  color: #fff;
-  font-weight: bold;
-  box-shadow: 0 5px #c37d2f;
-  transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
+  transition: transform 0.1s;
 }
 
 #mine-btn:hover {
-  background: linear-gradient(to bottom, #f4c86d, #ebaa45);
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(-5deg);
 }
 
 #mine-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px #c37d2f;
+  transform: scale(0.95) rotate(5deg);
 }
 
 /* Right upgrades area */
@@ -113,15 +105,10 @@ h1 {
   font-weight: bold;
   color: #e8a03f;
   animation: floatUp 1s ease-out forwards;
+  pointer-events: none;
 }
 
 @keyframes floatUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-50px); }
 }
