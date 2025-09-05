@@ -8,11 +8,18 @@ const mineBtn = document.getElementById("mine-btn");
 const woodenPickaxeBtn = document.getElementById("wooden-pickaxe-btn");
 let woodenPickaxeCost = 10;
 
-// Function to show floating +X text
+// Function to show floating +X text around the pebble
 function showFloatingText(text) {
   const span = document.createElement("span");
   span.textContent = text;
   span.className = "floating-text";
+
+  // Randomize position around the pebble image
+  const xOffset = (Math.random() - 0.5) * 80; // -40 to +40 px
+  const yOffset = (Math.random() - 1) * 50;   // -50 to 0 px
+  span.style.left = `${50 + xOffset}%`; // relative to oreCount
+  span.style.top = `${50 + yOffset}px`;
+
   oreCount.appendChild(span);
 
   setTimeout(() => {
